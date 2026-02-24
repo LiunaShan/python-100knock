@@ -81,3 +81,118 @@ b = 3.14
 c = "Hello, Python!"
 d = True
 print(type(a),type(b),type(c),type(d))
+
+#18
+print("#18")
+lst = [1, 2, 3]
+print(lst)
+print(lst[0])
+
+#19
+print("#19")
+print(lst[1:2])
+
+#20
+print("#20")
+lst.append(4)
+print(lst)
+
+#21
+print("#21")
+lst = [1, 2, 3]
+print(len(lst))
+
+#22
+print("#22")
+lst.remove(2)
+print(lst)
+
+#23
+print("#23")
+lst = [1,2] + [3,4]
+print(lst)
+
+#24
+print("#24")
+x = 15
+if x > 10:
+    print("xは10より大きい")
+
+#25
+print("#25")
+x = 10
+if x > 10:
+    print("xは10より大きい")
+elif x > 5:
+    print("xは5より大きいが、10以下")
+else:
+    print("xは5以下")
+
+#26
+print("#26")
+x = 10
+y = 20
+print(x > y)
+print(x >= y)
+print(x == y)
+print(y >= x)
+print(y > x)
+
+#27
+print("#27")
+lst = [1, 2, 3]
+print(2 in lst)
+
+#28
+print("#28")
+y = None
+print(y is None)
+
+#29
+print("#29")
+x = 10
+y = 20
+print(x > 15 and y > 15)
+print(x > 15 or y > 15)
+
+#30
+print("#30")
+x = None
+if x is not None:
+    print("x は None ではない")
+if not (x is None):
+    print("x は None ではない")
+
+#31
+print("#31")
+lst = [1, 2, 3]
+for i in lst:
+    print(i)
+
+#32
+print("#32")
+for i in range(10):
+    print(i)
+
+#33
+print("#33")
+x = 5
+for i in range(10):
+    if i == x:
+        break
+    print(i)
+
+#34
+print("#34")
+x = 5
+for i in range(10):
+    if i == x:
+        continue
+    print(i)
+
+#35
+print("#35")
+x = 10
+while x > 0:
+    print(x)
+    x -= 1 
