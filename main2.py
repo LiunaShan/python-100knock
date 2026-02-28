@@ -53,3 +53,53 @@ for x in dct.items():
 print("#43")
 result = [i for i in range(1,10) if i % 2 == 0]
 print(result)
+
+#44
+print("#44")
+x = "1, 2, 3"
+print(x.replace(",","&"))
+
+#45
+print("#45")
+x = "1, 2, 3"
+lst = x.split(",")
+print(lst)
+y = "&".join(lst)
+print(y)
+
+#46
+print("#46")
+x = 10
+y =3
+print(x*y)
+print(float(x/y))
+print(int(x/y))
+print(x//y)
+print(x%y)
+
+#47
+print("#47")
+lst = [1, 2, 3] 
+print(max(lst))
+
+#48
+print("#48")
+x = 0
+try:
+    print(1/x)
+except ZeroDivisionError:
+    print("ゼロ除算エラーが発生しました")
+
+#49
+print("#49")
+x = None
+try:
+    print(x*2)
+except TypeError as e:
+    print("エラー内容:" + str(e))
+
+#50
+print("#50") 
+x = -1 
+if x < 0 :
+   raise ValueError( "負の値が入力されました" )
